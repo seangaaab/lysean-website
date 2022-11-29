@@ -1,0 +1,46 @@
+#Product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100vw;
+
+    .div1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+        width: 100%;
+
+        background-image: url(../../assets/img/ProductsBG/Background1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1{
+            align-self: flex-start;
+            font-family: 'Montserrat';
+            font-size: 5em;
+            text-transform: uppercase;
+            
+        }
+        .boxContainers{
+            display: grid;
+            width: 50%;
+            grid-template-columns: 1fr 1fr;
+            gap: 5% 5%;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+            
+            div{
+                width: 25vw;
+                height: 25vw;
+                background-color: white;
+                border-radius: 50px;
+            }
+        }
+    }
+    .spacer{
+        width: 100%;
+        height: 50vh;
+    }
+}

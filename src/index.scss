@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;700;800;900&family=Mr+Dafoe&family=Sen:wght@400;700&display=swap');
+:root {
+  // font-family: Avenir, ;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing:border-box;
+  user-select: none;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+  font-family: 'Overpass', sans-serif;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// ::-webkit-scrollbar {
+//   width: 5px;
+//   background:transparent;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: rgb(171,171,171);
+//   -webkit-border-radius: 2ex;
+// }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bababa;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #bababa;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #bababa;
+}
+
+button{
+  cursor: pointer;
+}

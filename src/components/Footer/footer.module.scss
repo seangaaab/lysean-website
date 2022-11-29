@@ -1,0 +1,80 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+    background-color: #0A6795;
+    // background-image: url(../../assets/img/FooterIcons/FooterBG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    color: white;
+    font-family: 'Montserrat';
+
+    *{
+        z-index: 3;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        .office{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+
+            img{
+                height: 80%;
+                margin-right: 5%;
+            }
+
+            p{
+                width: 40%;
+                font-size: 100%;
+            }
+        }
+
+        .contactInfo{
+            flex-direction: column;
+            width: 30%;
+
+            span{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                img{
+                    width: auto;
+                    height: 60%;
+                    margin-right: 5%;
+                }
+            }
+        }
+    }
+
+    hr{
+        width: 25%;
+        outline: none;
+    }
+    p{
+        margin-top: -0.5%;
+    }
+
+    .bg{
+        z-index: 1;
+        position: absolute;
+        // top: 0;
+        width: 100vw;
+        height: 50%;
+        margin-top: -35%;
+
+        // background-image: url(../../assets/img/FooterIcons/FooterBG.svg);
+        background-image: url(../../assets/img/FooterIcons/FooterBG.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background: linear-gradient(180deg, rgba(5, 51, 74, 0) 0%, #0A6795 58.12%);
+    }
+}

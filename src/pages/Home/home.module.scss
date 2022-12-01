@@ -10,7 +10,7 @@
         flex-direction: column;
         position: relative;
         align-items: center;
-        height: 100vh;
+        height: 92vmax;
         width: 100%;
         background-image: url(../../assets/img/HomeBG/Background1.png);
         background-repeat: no-repeat;
@@ -20,8 +20,9 @@
             display: flex;
             justify-content: center;
             position: relative;
-            top:25vh;
+            top:6vmax;
             width: 100%;
+            margin-top: 15vmax;
 
             img{
                 width: auto;
@@ -33,44 +34,46 @@
             align-items: center;
             flex-direction: column;
             position: relative;
-            top:35vh;
+            top: 10vmax;
             width: 100%;
             
             h3{
                 color: white;
                 font-size: clamp(1.5rem, 5vw, 3rem);
-                font-family: 'Montserrat';
+                font-family: "Montserrat";
                 font-weight: 500;
                 text-shadow: -2px 5px 4.74474px rgb(0 0 0 / 64%);
                 text-align: center;
                 line-height: 2.3em;
+                margin: auto;
+                position: relative;
+                top: 0;
                 span{
                     font-size: 1.8em;
                     color: #FF3939;
-                    font-family: 'Mr Dafoe', cursive;
-                    text-shadow: 0px 10.6757px 4.74474px rgba(0, 0, 0, 0.64);
+                    font-family: "Mr Dafoe", cursive;
+                    text-shadow: 0px 10.6757px 4.74474px rgb(0 0 0 / 64%);
                     cursor: default;
                 }
             }
             p{
                 color: white;
                 text-align: center;
-                font-family: 'Montserrat Alternates';
+                font-family: "Montserrat Alternates";
                 font-weight: 500;
                 font-size: clamp(0.8rem, 5vw, 1.5rem);
                 line-height: 1.5em;
-                text-shadow: 0px 4.74474px 4.74474px rgba(0, 0, 0, 0.9);
+                text-shadow: 0px 4.74474px 4.74474px rgb(0 0 0 / 90%);
                 padding: 0.6% 0.6%;
-                margin-top: 3vmax;
-                // line-height: 5px;
+                position: relative;
             }
 
             #btn{
                 position: relative;
                 align-self: center;
-                left: 20%;
+                left: 17%;
                 color: white;
-                font-family: 'Montserrat';
+                font-family: "Montserrat";
                 font-size: clamp(0.7rem, 3vw, 1.2rem);
                 filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.7));
                 a{
@@ -95,7 +98,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        height: 175vh;
+        height: 175vmax;
         width: 100%;
         display: flex;
         flex-direction: column;

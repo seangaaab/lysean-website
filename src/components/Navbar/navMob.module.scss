@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
 
     background-color: #fe4040;
 
@@ -30,10 +31,10 @@
         width: auto;
         display: flex;
         flex-direction: column;
+        align-self: flex-end;
 
-        position: absolute;
-        top: 50%;
-        right: 5%;
+        position: relative;
+        top: 10%;
 
         background-color: transparent;
 

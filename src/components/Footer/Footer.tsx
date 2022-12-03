@@ -1,16 +1,15 @@
 import styles from'./footer.module.scss'
 import office from '../../assets/img/FooterIcons/OfficeIcon.png'
-import bg from '../../assets/img/FooterIcons/FooterBG.svg'
+import bg from '../../assets/img/FooterIcons/FooteriBG.svg'
 
 import telephone from '../../assets/img/FooterIcons/telephone.png'
 import facebook from '../../assets/img/FooterIcons/fb.png'
 import mail from '../../assets/img/FooterIcons/mail.png'
 
-import { useState } from 'react'
-
 export const Footer = () => {
   return (
     <footer id={styles.footer}>
+      {/* <img src={bg} alt="" className={styles.bg}/> */}
       <div>
         <div className={styles.office}>
           <img src={office} alt="" />
@@ -38,9 +37,7 @@ export const Footer = () => {
 
       <hr />
 
-      <p>Copyright © 2022 Lysean Food Products</p>
-      <div className={styles.bg}></div>
-      {/* <img src={bg} alt="" className={styles.bg}/> */}
+      <p className={styles.copyright}>Copyright © 2022 Lysean Food Products</p>
     </footer>
   )
 }

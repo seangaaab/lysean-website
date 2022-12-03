@@ -102,6 +102,7 @@ const Home = () => {
             <button>Send</button>
           </form>
         </div>
+        <div id={styles.footerDiv}></div>
       </section>
 
       <Footer />

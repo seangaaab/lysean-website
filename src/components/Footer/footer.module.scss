@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
-    height: 35vh;
+    position: relative;
     background-color: #0A6795;
+    // background: linear-gradient(180deg, rgba(5, 51, 74, 0) 0%, #0A6795 58.12%);
     // background-image: url(../../assets/img/FooterIcons/FooterBG.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,36 +20,52 @@
     }
 
     div{
+        // margin-top: 8vmax;
         display: flex;
         flex-direction: row;
         .office{
             display: flex;
-            flex-direction: row;
-            width: 70%;
-
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+            padding: 0% 3% 0% 3%;
+            
             img{
-                height: 80%;
+                align-self: start;
+                height: 10vmax;
                 margin-right: 5%;
+                padding-top: 10%;
             }
 
             p{
-                width: 40%;
-                font-size: 100%;
+                width: 100%;
+                font-size: 0.7em;
+                line-height: normal ;
             }
         }
 
         .contactInfo{
+            display: flex;
+            justify-content: space-evenly;
             flex-direction: column;
-            width: 30%;
+            width: 50%;
+            padding-right: 3%;
 
             span{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
 
+                p{
+                    font-size: 0.7em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    line-height: normal;
+                }
+
                 img{
                     width: auto;
-                    height: 60%;
+                    height: 3vmax;
                     margin-right: 5%;
                 }
             }
@@ -56,25 +73,12 @@
     }
 
     hr{
-        width: 25%;
+        width: 80%;
         outline: none;
     }
-    p{
+    p.copyright{
         margin-top: -0.5%;
-    }
-
-    .bg{
-        z-index: 1;
-        position: absolute;
-        // top: 0;
-        width: 100vw;
-        height: 50%;
-        margin-top: -35%;
-
-        // background-image: url(../../assets/img/FooterIcons/FooterBG.svg);
-        background-image: url(../../assets/img/FooterIcons/FooterBG.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        // background: linear-gradient(180deg, rgba(5, 51, 74, 0) 0%, #0A6795 58.12%);
+        font-size: 0.7em;
+        text-align: center;
     }
 }

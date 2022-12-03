@@ -98,7 +98,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        // height: 175vmax;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -110,7 +109,6 @@
             display: block;
             width: 100%;
             height: 7vmax;
-            line-height: 0;
             top: -1px;
             // left: 0; 
             overflow-y: hidden;
@@ -121,17 +119,13 @@
         }
 
         .section2container{
-            margin-top: 10%;
+            margin-top: 7vmax;
             display: flex;
-            flex-direction: row;
-            width: 100vw;
-            height: 115vh;
+            flex-direction: column;
 
             .philmap{
                 display: flex;
                 flex-direction: column;
-                width: 50vw;
-                height: 100vh;
                 justify-content: center;
                 background-image: url(../../assets/img/HomeBG/PhilMap.png);
                 background-position: center;
@@ -142,31 +136,28 @@
                 text-transform: uppercase;
 
                 h4{
-                    font-size: 2.2em;
-                    line-height: 1.5em;
+                    font-size: 2em;
+                    line-height: normal;
                     font-weight: 700;
                 }
                 h2{
-                    font-size: 4.2em;
-                    line-height: 1.2em;
+                    font-size: 2.2em;
+                    line-height: normal;
                 }
             }
 
             .locations{
                 display: flex;
                 flex-direction: column;
-                width: 50vw;
-                height: 100vh;
+                width: 100%;
                 justify-content: center;
                 align-items: center;
                 img{
                     width: 90%;
-                    height: 50vh;
-                    // margin-top: 35vh;
                 }
 
                 p{
-                    align-self: flex-start;
+                    align-self: center;
                     font-size: 1.5em;
                     color: white;
                     font-weight: 600;
@@ -189,13 +180,18 @@
         }
         .list{
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            flex-direction: column;
+            align-self: center;
             width: 100%;
 
             ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 list-style: none;
                 font-family: 'Montserrat';
+                padding: unset;
 
                 li{
                     font-weight: 600;
@@ -214,10 +210,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        height: 120vh;
         width: 100%;
         display: flex;
         flex-direction: column;
+
         .divider2{
             // z-index: 0;
             justify-content: center;
@@ -225,7 +221,7 @@
             display: block;
             width: 100%;
             height: 7vmax;
-            line-height: 0;
+            top: -2px;
             overflow-y: hidden;
             background-image: url(../../assets/img/divider3.svg);
             background-repeat: no-repeat;
@@ -237,11 +233,11 @@
             flex-direction: column;
             align-self: center;
             width: 80%;
-            height: 100%;
-            margin-top: 10%;
+            margin-top: 7vmax;
+            padding-bottom: 5vmax;
             h1{
                 font-family: 'Montserrat';
-                font-size: 4em;
+                font-size: 2em;
                 color: white;
                 text-decoration: underline;
                 text-transform: uppercase;
@@ -250,9 +246,9 @@
             }
             form{
                 display: flex;
-                align-self: flex-end;
+                align-self: center;
                 flex-direction: column;
-                width: 50%;
+                width: 70%;
 
                 &>*{
                     background-color: transparent;
@@ -261,7 +257,7 @@
                     border-bottom: 2px solid #FFFFFF;
                     font-family: 'Montserrat';
                     font-weight: 500;
-                    font-size: 1em;
+                    font-size: 0.8em;
                 }
 
                 input{
@@ -271,9 +267,8 @@
                 textarea{
                     display: flex;
                     resize: none;
-                    height: 20vh;
+                    height: 20vmax;
                     margin-bottom: 10%;
-                    // bottom: 0;
                     justify-content: flex-end;
                 }
 
@@ -286,6 +281,20 @@
                     font-size: 1.5em;
                 }
             }
+        }
+        #footerDiv{
+            justify-content: center;
+            position: relative;
+            display: block;
+            width: 100%;
+            /* height: 28vmax; */
+            bottom: 0;
+            overflow-y: hidden;
+            background-image: url(/src/assets/img/FooterIcons/Footeri.svg);
+            aspect-ratio: 1921/413;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
    }
 }

@@ -6,7 +6,12 @@ import home1 from '../../assets/img/HomeBG/Div 1.png'
 import arrow from '../../assets/img/Arrow.svg'
 
 import LyseanLocations from '../../assets/img/HomeBG/LyseanLocations.png'
-import malls from '../../assets/img/mall-logos/Group 5.svg'
+// import malls from '../../assets/img/mall-logos/Group 5.svg'
+import kcc from '../../assets/img/mall-logos/kcc.png'
+import sm from '../../assets/img/mall-logos/sm.png'
+import savemore from '../../assets/img/mall-logos/smSavemore.png'
+import gmall from '../../assets/img/mall-logos/gmallLogo.png'
+import grand from '../../assets/img/mall-logos/GaisanoGrandLogo.png'
 
 const Home = () => {
   return (
@@ -40,7 +45,11 @@ const Home = () => {
             <img src={LyseanLocations} alt="" />
             <p>Partner Stores:</p>
             <div className={styles.malls}>
-              <img src={malls} alt="" />
+              <img src={sm} alt="" />
+              <img src={savemore} alt="" />
+              <img src={gmall} alt="" />
+              <img src={grand} alt="" />
+              <img src={kcc} alt="" />
             </div>
           </div>
         </div>
@@ -68,6 +77,7 @@ const Home = () => {
 
           <ul>
             <li><h3>Digos</h3></li>
+            <li>Gaisano Mall Digos</li>
             <li>Gaisano Center Digos</li>
             <li>Gaisano Grand Digos</li>
           </ul>
@@ -102,7 +112,7 @@ const Home = () => {
             <button>Send</button>
           </form>
         </div>
-        <div id={styles.footerDiv}></div>
+        <div id={styles.footerPrimer}></div>
       </section>
 
       <Footer />

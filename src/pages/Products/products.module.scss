@@ -6,12 +6,14 @@
     width: 100vw;
 
     .div1{
-        display: flex;
+        margin-top: 15vmax;
+        position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 150vh;
         width: 100%;
+        padding: 0% 5% 5% 5%;
+        margin-bottom: 5%;
 
         background-image: url(../../assets/img/ProductsBG/Background1.png);
         background-repeat: no-repeat;
@@ -20,27 +22,223 @@
         h1{
             align-self: flex-start;
             font-family: 'Montserrat';
-            font-size: 5em;
+            font-size: clamp(24px, 5vw, 72px);
             text-transform: uppercase;
             
         }
         .boxContainers{
-            display: grid;
-            width: 50%;
-            grid-template-columns: 1fr 1fr;
-            gap: 5% 5%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
             filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
-            
+            padding: 0% 14%;
             div{
-                width: 25vw;
-                height: 25vw;
+                width: clamp(80px, 20vmax, 200px);
+                height: clamp(80px, 20vmax, 200px);
                 background-color: white;
-                border-radius: 50px;
+                border-radius: 10%;
+                margin: 1%;
             }
         }
     }
-    .spacer{
+    .div2{
         width: 100%;
-        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        
+        @media (max-width: 692px) {
+            flex-direction: column;
+        }
+        justify-content: center;
+        text-align: center;
+
+        &>div{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+
+
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 100%;
+            padding: 3%;
+
+            img{
+                width: 30%;
+                height: auto;
+            }
+
+            h4{
+                font-family: "Montserrat";
+                font-weight: 500;
+                text-shadow: -2px 5px 4.74474px rgb(0 0 0 / 64%);
+                text-align: center;
+                line-height: normal;
+
+                max-height: 5%;
+
+                margin-bottom: 3%;
+                position: relative;
+
+                margin: 0% 0% 3% ;
+            }
+
+            
+        }
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5%;
+            margin-bottom: 3%;
+        }
+
+        .stores{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(253, 253, 253, 0.58);
+            border-radius: 22px;
+            margin-bottom: 3%;
+
+            img{
+                height: min(5vmax, 60px);
+                width: auto;
+                margin-top: 0;
+            }
+        }
+
+        .lysean{
+            background-image: url(../../assets/img/ProductsBG/LyseanBG.png);
+
+            h4{
+                color: white;
+                font-family: "Montserrat";
+                font-weight: 500;
+                text-shadow: 0px 2.93314px 2.93314px rgba(0, 0, 0, 0.9);
+                text-align: center;
+                font-size: 1rem;
+                letter-spacing: 0.38em;
+                span{
+                    font-size: 2.5rem;
+                    color: #FF3939;
+                    font-family: "Mr Dafoe", cursive;
+                    text-shadow: 0px 7px 4.74474px rgba(0, 0, 0, 0.64);
+                    cursor: default;
+                    letter-spacing: normal;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .gmall{
+            background-image: url(../../assets/img/ProductsBG/GreatValue.png);
+            h4{
+                font-family: 'Montserrat';
+                font-weight: 600;
+                text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+                text-transform: uppercase;
+                color: #333333;
+                font-size: 1.3rem;
+                span{
+                    font-weight: 400;
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        .productLists{
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+            // padding: 0% 5%;
+            margin-bottom: 5%;
+
+            div{
+                width: clamp(60px, 30vmax, 125px);
+                height: clamp(60px, 30vmax, 125px);
+                background-color: white;
+                border-radius: 10%;
+                margin: 1%;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .div3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: clamp(24px, 5vw, 72px);
+            text-align: center;
+        }
+
+        img{
+            width: min(20%, 80px);
+            height: auto;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            img{
+                width: 20%;
+                height: auto;
+            }
+
+            span{
+                width: 50%;
+                font-family: 'Montserrat Alternates';
+                font-size: clamp(20px, 5vw, 50px);
+                line-height: normal;
+
+                button{
+                    margin-top: 5%;
+                    font-size: clamp(16px, 2vw, 36px);
+                    padding: 2%;
+                    font-family: 'Montserrat';
+                    border: none;
+                    border-radius: 20px;
+                    background-color: #FF4A4A;                    ;
+                }
+            }
+        }
+    }
+
+    #footerPrimer{
+        justify-content: center;
+        position: relative;
+        display: block;
+        width: 100%;
+        /* height: 28vmax; */
+        bottom: -2px;
+        overflow-y: hidden;
+        background-image: url(/src/assets/img/FooterIcons/FooterBG.svg);
+        aspect-ratio: 1921/413;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

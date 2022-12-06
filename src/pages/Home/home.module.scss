@@ -214,7 +214,6 @@
             ul{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
 
                 list-style: none;
                 font-family: 'Montserrat';
@@ -307,6 +306,7 @@
                     text-transform: uppercase;
                     font-weight: 700;
                     font-size: 1.5em;
+                    padding: 3%;
                 }
             }
         }

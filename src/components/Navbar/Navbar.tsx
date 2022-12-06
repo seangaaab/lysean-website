@@ -3,7 +3,7 @@ import Logo from '../../assets/img/lysean-logo.png'
 import styles from './navMob.module.scss'
 import NavbarBG from '../../assets/img/NavbarBG.png'
 import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 
 const Navbar = () => {
@@ -15,6 +15,9 @@ const Navbar = () => {
   }
 
   const navigate = useNavigate();
+
+  const section2 = parent.document.getElementById('section2');
+
   return (
     // <nav>
     //   <div>
@@ -45,10 +48,32 @@ const Navbar = () => {
         </div>
       <div className={!show ? styles.menu : `${styles.menu} ${styles.show}` }>
         <ul>
-          <li><a onClick={()=>{navigate('/')}}>Home</a></li>
-          <li><a onClick={()=>{navigate('/products')}}>Products</a></li>
-          <li><a onClick={()=>{navigate('/')}}>Locations</a></li>
-          <li><a onClick={()=>{navigate('/')}}>Contact</a></li>
+          <li><a 
+          onClick={ ()=>{
+            mobileMenu()
+            navigate('/')
+            window.scrollTo(0, 0);
+          }
+          }>Home</a></li>
+          <li><a
+          href='/products'
+          onClick={()=>{
+            mobileMenu()
+          }
+        }>Products</a></li>
+          <li><a
+          href='/#section2'
+          onClick={()=>{
+            mobileMenu()
+          }
+            
+          }>Locations</a></li>
+          <li><a
+          href='/#section3'
+          onClick={()=>{
+            mobileMenu()
+          }
+          }>Contact</a></li>
         </ul>
       </div>
     </nav>

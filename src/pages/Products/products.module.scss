@@ -221,7 +221,12 @@
                     font-family: 'Montserrat';
                     border: none;
                     border-radius: 20px;
-                    background-color: #FF4A4A;                    ;
+                    background-color: hsl(0, 100%, 65%);
+                    transition: all ease-in 0.2s;
+                    
+                    &:hover{
+                        background-color: hsl(0, 100%, 75%);
+                    }
                 }
             }
         }

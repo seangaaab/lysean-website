@@ -1,4 +1,5 @@
 import { Footer } from '../../components/Footer/Footer'
+import { useParams } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
 import styles from './home.module.scss'
 
@@ -31,7 +32,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={styles.section2}>
+      <section className={styles.section2} id='section2'>
         <div className={styles.divider1}></div>
 
         <div className={styles.section2container}>
@@ -100,8 +101,8 @@ const Home = () => {
         </div>
 
       </section>
-
-      <section className={styles.section3}>
+    
+      <section className={styles.section3} id='section3'>
         <div className={styles.divider2}></div>
         <div className={styles.contact}>
           <h1>Contact Us</h1>

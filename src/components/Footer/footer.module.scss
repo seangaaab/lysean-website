@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-color: #0A6795;
     // background: linear-gradient(180deg, rgba(5, 51, 74, 0) 0%, #0A6795 58.12%);
@@ -23,6 +23,7 @@
         // margin-top: 8vmax;
         display: flex;
         flex-direction: row;
+        width: 100%;
         .office{
             display: flex;
             flex-direction: column;
@@ -32,14 +33,14 @@
             
             img{
                 align-self: start;
-                height: 10vmax;
+                height: clamp(50px, 15vmax, 150px);
                 margin-right: 5%;
                 padding-top: 10%;
             }
 
             p{
                 width: 100%;
-                font-size: 0.7em;
+                font-size: clamp(12px, 3vw, 18px);
                 line-height: normal ;
             }
         }
@@ -57,7 +58,7 @@
                 align-items: center;
 
                 p{
-                    font-size: 0.7em;
+                    font-size: clamp(12px, 3vw, 18px);
                     overflow: hidden;
                     text-overflow: ellipsis;
                     line-height: normal;
@@ -78,7 +79,7 @@
     }
     p.copyright{
         margin-top: -0.5%;
-        font-size: 0.7em;
+        font-size: clamp(12px, 3vw, 18px);
         text-align: center;
     }
 }

@@ -10,8 +10,11 @@ import sm from '../../assets/img/mall-logos/sm-logo.png'
 import savemore from '../../assets/img/mall-logos/savemore-logo.png'
 import gmall from '../../assets/img/mall-logos/gmall-logo.png'
 import grand from '../../assets/img/mall-logos/grand-logo.png'
+import { useNavigate } from 'react-router-dom'
+
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div id={styles.Home}>
       <Navbar/>
@@ -25,7 +28,10 @@ const Home = () => {
             proudly sells food products <br/>
             that are native in Southern Philippines 
           </p>
-          <span id={styles.btn}><a href='../Products'>visit products <img src={arrow} alt="Visit Products" /></a></span>
+          <span id={styles.btn} onClick={()=>{
+            navigate('/products')
+            window.scrollTo(0, 0);
+            }}><a>visit products <img src={arrow} alt="Visit Products" /></a></span>
         </div>
       </section>
 

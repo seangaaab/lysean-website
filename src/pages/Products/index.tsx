@@ -2,8 +2,8 @@ import { Footer } from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import styles from './products.module.scss'
 
-import lysean from '../../assets/img/ProductsBG/lyseanlogo.png'
-import greatVal from '../../assets/img/ProductsBG/greatValueLogo.png'
+import lysean from '../../assets/img/ProductsBG/lysean-store.png'
+import greatVal from '../../assets/img/ProductsBG/great-value-logo.png'
 
 import kcc from '../../assets/img/mall-logos/kcc-logo.png'
 import sm from '../../assets/img/mall-logos/sm-logo.png'
@@ -12,7 +12,7 @@ import gmall from '../../assets/img/mall-logos/gmall-logo.png'
 import grand from '../../assets/img/mall-logos/grand-logo.png'
 
 import business from '../../assets/img/ProductsBG/business.png'
-import rebrand from '../../assets/img/ProductsBG/Rebrand.png'
+import rebrand from '../../assets/img/ProductsBG/rebrand.png'
 import { HashLink } from 'react-router-hash-link'
 
 const Products = () => {

@@ -5,11 +5,11 @@ import styles from './home.module.scss'
 import home1 from '../../assets/img/HomeBG/Div 1.png'
 import arrow from '../../assets/img/Arrow.svg'
 import LyseanLocations from '../../assets/img/HomeBG/LyseanLocations.png'
-import kcc from '../../assets/img/mall-logos/kcc.png'
-import sm from '../../assets/img/mall-logos/smlogo.png'
-import savemore from '../../assets/img/mall-logos/smSavemore.png'
-import gmall from '../../assets/img/mall-logos/gmallLogo.png'
-import grand from '../../assets/img/mall-logos/GaisanoGrandLogo.png'
+import kcc from '../../assets/img/mall-logos/kcc-logo.png'
+import sm from '../../assets/img/mall-logos/sm-logo.png'
+import savemore from '../../assets/img/mall-logos/savemore-logo.png'
+import gmall from '../../assets/img/mall-logos/gmall-logo.png'
+import grand from '../../assets/img/mall-logos/grand-logo.png'
 
 const Home = () => {
   return (

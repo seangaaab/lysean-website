@@ -1,7 +1,5 @@
-// import './navbar.module.scss'
 import Logo from '../../assets/img/lysean-logo.png'
 import styles from './Navbar.module.scss'
-import NavbarBG from '../../assets/img/NavbarBG.png'
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { HashLink } from 'react-router-hash-link';

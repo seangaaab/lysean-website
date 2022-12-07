@@ -88,18 +88,18 @@
 
                 a{
                     text-decoration: none;
+                    &:visited{
+                        color: #ffffff;
+                    }
                     p{
                         color: #ffffff;
+                    }
                     }
                     img{
                         height: auto;
                         width: 1.3em;
                     }
                 }
-                :visited{
-                    color: #ffffff;
-                }
-            }
         }
     }
 

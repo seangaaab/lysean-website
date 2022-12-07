@@ -79,12 +79,12 @@
                 font-size: clamp(0.7rem, 3vw, 1.2rem);
                 filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.7));
                 transition: all 0.1s ease-in;
+                cursor: pointer;
 
                 &:hover{
                     opacity: 0.5;
                     scale: 1.05;
                     transition: all 0.1s ease-in;
-                    cursor: pointer;
                 }
                 
                 a:visited{

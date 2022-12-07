@@ -103,14 +103,6 @@
 
         z-index: 3;
 
-        // button {
-        //     display: block;
-        //     width: auto;
-        //     height: auto;
-        //     position: absolute;
-        //     top: 0;
-        //     right: 0;
-        // }
             &.show {
                 opacity: 1;
                 z-index: 10;
@@ -172,7 +164,6 @@
             top: 22%;
             right: 0;
             padding: 0% 20%;
-            // height: 15vmax;
             
             background-color: transparent;
             ul{
@@ -182,9 +173,6 @@
                 
                 li{
                     margin: 0;
-                    a{
-
-                    }
                 }
                 span{
                     width: 15vmax;
@@ -194,5 +182,4 @@
 
         }
     }   
-
 }

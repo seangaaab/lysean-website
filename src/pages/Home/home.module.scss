@@ -115,14 +115,12 @@
         justify-content: center;
 
         .divider1{
-            // z-index: 0;
             justify-content: center;
             position: absolute;
             display: block;
             width: 100%;
             height: 7vmax;
             top: -1px;
-            // left: 0; 
             overflow-y: hidden;
             background-image: url(../../assets/img/divider1-1.svg);
             background-repeat: no-repeat;
@@ -143,10 +141,8 @@
             column-gap: 5%;
             align-self: center;
             width: 100%;
-            // padding: 0% 5%;
 
             .philmap{
-                // width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -175,7 +171,6 @@
             }
 
             .locations{
-                // width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -199,7 +194,6 @@
                     justify-content: center;
                     flex-wrap: wrap;
                     align-items: center;
-                    // width: 90%;
                     padding: 3% 1%;
 
                     background-color: rgba(253, 253, 253, 0.58);
@@ -253,7 +247,6 @@
         flex-direction: column;
 
         .divider2{
-            // z-index: 0;
             justify-content: center;
             position: absolute;
             display: block;
@@ -333,7 +326,6 @@
             position: relative;
             display: block;
             width: 100%;
-            /* height: 28vmax; */
             bottom: -2px;
             overflow-y: hidden;
             background-image: url(/src/assets/img/FooterIcons/FooterBG.svg);

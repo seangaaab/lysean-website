@@ -1,13 +1,10 @@
 import { Footer } from '../../components/Footer/Footer'
-import { useParams } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
 import styles from './home.module.scss'
 
 import home1 from '../../assets/img/HomeBG/Div 1.png'
 import arrow from '../../assets/img/Arrow.svg'
-
 import LyseanLocations from '../../assets/img/HomeBG/LyseanLocations.png'
-// import malls from '../../assets/img/mall-logos/Group 5.svg'
 import kcc from '../../assets/img/mall-logos/kcc.png'
 import sm from '../../assets/img/mall-logos/sm.png'
 import savemore from '../../assets/img/mall-logos/smSavemore.png'

@@ -17,7 +17,7 @@ import { HashLink } from 'react-router-hash-link'
 
 const Products = () => {
   return (
-    <div id={styles.Product}>
+    <div className={styles.Product} id='product'>
 		<Navbar/>
 		<div className={styles.div1}>
 			<h1>Our Products</h1>

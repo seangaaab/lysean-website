@@ -1,6 +1,6 @@
 // import './navbar.module.scss'
 import Logo from '../../assets/img/lysean-logo.png'
-import styles from './navMob.module.scss'
+import styles from './Navbar.module.scss'
 import NavbarBG from '../../assets/img/NavbarBG.png'
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
@@ -42,23 +42,12 @@ const Navbar = () => {
   }
 
   return (
-    // <nav>
-    //   <div>
-    //     <a onClick={()=>{navigate('/')}}>Home</a>
-    //     <a onClick={()=>{navigate('/products')}}>Products</a>
-    //     <button onClick={()=>{navigate('/')}}>
-    //     <img src={Logo} alt="Lysean Logo" />
-    //     </button>
-    //     <a href="#">Locations</a>
-    //     <a href="#">Contact</a>
-    //   </div>
-    //   {/* <img src={NavbarBG} alt="" /> */}
-    //   {/* <span>test</span> */}
-    // </nav>
-
     <nav id={styles.navbar}>
 
-        <button onClick={()=>{navigate('/')}}>
+        <button onClick={()=>{
+          navigate('/')
+          window.scrollTo(0, 0);
+          }}>
           <img src={Logo} alt="Lysean Logo" />
         </button>
 
@@ -78,12 +67,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
           >Home</a></li>
-          <li><a
-          href='/products'
-          onClick={()=>{
-            mobileMenu()
-          }}
-          >Products</a></li>
+          <li>
+            <HashLink to='/products#product' onClick={mobileMenu} scroll={scrollOffset}>
+              Locations
+            </HashLink>
+          </li>
           <span onClick={()=>{
             navigate('/')
             window.scrollTo(0, 0);

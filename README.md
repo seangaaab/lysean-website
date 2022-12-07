@@ -7,3 +7,5 @@ Lysean Food Products is a small business based in Southern Mindanao that provide
 * React Typescript
 * SASS
 * Vercel (Deployment)
+
+[Figma Link](https://www.figma.com/file/Bn6UisWFPIFTi4kzq3ej74/Lysean-Website?node-id=0%3A1&t=EQX4cfM1wllHAjUE-1)

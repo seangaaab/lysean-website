@@ -67,7 +67,7 @@ const Navbar = () => {
           >Home</a></li>
           <li>
             <HashLink to='/products#product' onClick={mobileMenu} scroll={scrollOffset}>
-              Locations
+              Products
             </HashLink>
           </li>
           <span onClick={()=>{

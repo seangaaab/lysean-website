@@ -24,11 +24,11 @@ export const Footer = () => {
             <img src={telephone} alt="" />
             <p>(082) 237 - 1650</p>
           </span>
-          <span>
+          <span onClick={()=>{ window.location.href = 'callto:0822371650' }}>
             <img src={facebook} alt="" />
             <p>Lysean Food Products</p>
           </span>
-          <span>
+          <span onClick={()=>window.location.href = 'mailto:lyseantuna@yahoo.com.ph'}>
             <img src={mail} alt="" />
             <p>lyseantuna@yahoo.com.ph</p>
           </span>

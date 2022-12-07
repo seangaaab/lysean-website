@@ -6,13 +6,13 @@
     width: 100vw;
 
     .div1{
-        margin-top: 15vmax;
+        // margin-top: 15vmax;
         position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 0% 5% 5% 5%;
+        padding: 15vmax 5% 5% 5%;
         margin-bottom: 5%;
 
         background-image: url(../../assets/img/ProductsBG/Background1.png);
@@ -217,7 +217,7 @@
                 button{
                     margin-top: 5%;
                     font-size: clamp(16px, 2vw, 36px);
-                    padding: 2%;
+                    padding: clamp(8px, 2%, 16px);
                     font-family: 'Montserrat';
                     border: none;
                     border-radius: 20px;
@@ -226,6 +226,11 @@
                     
                     &:hover{
                         background-color: hsl(0, 100%, 75%);
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: white;
                     }
                 }
             }

@@ -3,20 +3,43 @@ import Logo from '../../assets/img/lysean-logo.png'
 import styles from './navMob.module.scss'
 import NavbarBG from '../../assets/img/NavbarBG.png'
 import { useNavigate } from 'react-router-dom'
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { HashLink } from 'react-router-hash-link';
 
 
 const Navbar = () => {
 
-  const [show, setShow] = useState(false);
+  var initShow:Boolean = window.innerWidth >= 992 ? true : false;
+  const [show, setShow] = useState(initShow);
+  
+  useEffect(() => {
+    const widthListener = () => {
+      window.innerWidth >= 992 ? setShow(true) : setShow(false);
+    }
+    window.addEventListener('resize', widthListener)
+      
+    return () => {
+      window.removeEventListener('resize', widthListener)
+    }
+  }, [])
+  
 
   const mobileMenu = () =>{
-    setShow(!show)
+    window.innerWidth >= 992 ? null : setShow(!show)
   }
 
   const navigate = useNavigate();
 
-  const section2 = parent.document.getElementById('section2');
+  const scrollOffset = (el:any) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -80;
+    window.scrollTo(
+      {
+        top: yCoordinate + yOffset,
+      }
+    );
+
+  }
 
   return (
     // <nav>
@@ -53,27 +76,28 @@ const Navbar = () => {
             mobileMenu()
             navigate('/')
             window.scrollTo(0, 0);
-          }
-          }>Home</a></li>
+          }}
+          >Home</a></li>
           <li><a
           href='/products'
           onClick={()=>{
             mobileMenu()
-          }
-        }>Products</a></li>
-          <li><a
-          href='/#section2'
-          onClick={()=>{
-            mobileMenu()
-          }
-            
-          }>Locations</a></li>
-          <li><a
-          href='/#section3'
-          onClick={()=>{
-            mobileMenu()
-          }
-          }>Contact</a></li>
+          }}
+          >Products</a></li>
+          <span onClick={()=>{
+            navigate('/')
+            window.scrollTo(0, 0);
+          }}></span>
+          <li>
+            <HashLink to='/#section2' onClick={mobileMenu} scroll={scrollOffset}>
+              Locations
+            </HashLink>
+          </li>
+          <li>
+            <HashLink to='/#section3' onClick={mobileMenu} scroll={scrollOffset}>
+              Contact
+            </HashLink>
+          </li>
         </ul>
       </div>
     </nav>

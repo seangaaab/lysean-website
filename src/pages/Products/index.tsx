@@ -13,6 +13,7 @@ import grand from '../../assets/img/mall-logos/GaisanoGrandLogo.png'
 
 import business from '../../assets/img/ProductsBG/business.png'
 import rebrand from '../../assets/img/ProductsBG/Rebrand.png'
+import { HashLink } from 'react-router-hash-link'
 
 const Products = () => {
   return (
@@ -83,7 +84,7 @@ const Products = () => {
 				<img src={rebrand} alt="" />
 				<span>
 				Lysean Food Products is also open for orders for rebranding <br />
-				<button>Contact us now!</button>
+				<button><HashLink to='/#section3'>Contact us now!</HashLink></button>
 				</span>
 			</div>
 		</div>

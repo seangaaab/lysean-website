@@ -23,6 +23,9 @@
             position: relative;
             width: 100%;
             margin-top: 15vmax;
+            @media (min-width: 992px){
+                margin-top: 0vmax;
+            }
 
             img{
                 width: min(35vmax, 400px);
@@ -307,6 +310,13 @@
                     font-weight: 700;
                     font-size: 1.5em;
                     padding: 3%;
+                    transition: all 0.2s ease;
+
+                    &:hover{
+                        background-color: #FFFFFF;
+                        color: #000000;
+                        transition: all 0.2s ease;
+                    }
                 }
             }
         }
